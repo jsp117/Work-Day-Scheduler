@@ -1,9 +1,8 @@
-
 const column = $(".col-lg-8");
 const text = $("textarea");
 const saveBtn = $(".saveBtn");
 console.log(text);
-// var container = [];
+var container = [];
 pageOpen();
 
 // display current date
