@@ -4,12 +4,17 @@ const saveBtn = $(".saveBtn");
 console.log(text);
 var container = [];
 pageOpen();
+setInterval(currentHour, 1000);
 
 // display current date
 $("#currentDay").text(moment().format("dddd, MMMM Do"));
+var hour;
 
-// track hour in 24 hour time
-var currentHour = moment().format('HH');
+var currentHour = function (){
+hour = moment().format('HH');
+return(hour);
+}
+// var hour = moment().format('HH');
 
 console.log("Current Hour = " + currentHour);
 
@@ -28,13 +33,21 @@ for (var i = 0; i < column.length; i++) {
 }
 
 $(".saveBtn").on("click", function () {
-    var btnSave = this.id;
+    var btnSave = this.value;
     console.log(btnSave);
     var textSave = text[btnSave - 1].value;
     console.log("text id = " + textSave);
     localStorage.setItem(btnSave, textSave);
 });
 
+// push local storage to page out of array
+function pageOpen(){
+    for(var i = 0; i < text.length; i++){
+        container.push(localStorage.getItem(i + 1));
+        text[i].value = container[i];
+        }
+        console.log("container = " + container);
+}
 
 // working to save all at once
 // $(".saveBtn").on("click", function (event) {
@@ -49,13 +62,3 @@ $(".saveBtn").on("click", function () {
 //         localStorage.setItem(i, temp);
 //     }
 //   });
-
-// push local storage to page out of array
-function pageOpen(){
-    for(var i = 0; i < text.length; i++){
-        container.push(localStorage.getItem(i + 1));
-        text[i].value = container[i];
-        }
-        console.log("container = " + container);
-
-}
