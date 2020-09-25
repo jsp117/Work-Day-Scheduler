@@ -53,7 +53,7 @@ $(".saveBtn").on("click", function () {
 // push local storage to page out of array
 function pageOpen(){
     for(var i = 0; i < text.length; i++){
-        container.push(localStorage.getItem(i));
+        container.push(localStorage.getItem(i + 1));
         text[i].value = container[i];
         }
         console.log("container = " + container);
