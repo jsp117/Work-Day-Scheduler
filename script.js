@@ -1,7 +1,7 @@
 const column = $(".col-lg-8");
 const text = $("textarea");
 const saveBtn = $(".saveBtn");
-console.log(text);
+// console.log(text);
 const container = [];
 var hour = moment().format('HH');
 
@@ -30,7 +30,7 @@ function setColor(time) {
         else if (column[i].id < time) {
             $(column[i]).addClass("past");
         }
-        console.log(column[i].id);
+        // console.log(column[i].id);
     }
 }
 
