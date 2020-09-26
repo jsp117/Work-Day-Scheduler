@@ -37,16 +37,16 @@ function setColor(time) {
 // push local storage to page out of array
 function pageOpen() {
     for (var i = 0; i < text.length; i++) {
-        container.push(localStorage.getItem(i + 1));
+        container.push(localStorage.getItem(i));
         text[i].value = container[i];
     }
     // console.log("container = " + container);
 }
-
+// function to save value of textfield with the index of the value of the button clicked
 $(".saveBtn").on("click", function () {
     var btnSave = this.value;
     // console.log(btnSave);
-    var textSave = text[btnSave - 1].value;
+    var textSave = text[btnSave].value;
     // console.log("text id = " + textSave);
     localStorage.setItem(btnSave, textSave);
 });
@@ -56,19 +56,3 @@ pageOpen();
 setColor(hour);
 setInterval(currentHour, 1000);
 
-
-
-
-// working to save all at once
-// $(".saveBtn").on("click", function (event) {
-//     var btnSave = this.id;
-//     console.log("id = " + btnSave);
-//     for(var i = 0; i < text.length; i++){
-//         console.log("textfield classname = " + text[i].className);
-//         if(btnSave = text[i].className){
-//             var temp = text[i].value;
-//             console.log(temp);  
-//         }
-//         localStorage.setItem(i, temp);
-//     }
-//   });
