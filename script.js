@@ -7,20 +7,20 @@ var hour = moment().format('HH');
 
 // display current date
 $("#currentDay").text(moment().format("dddd, MMMM Do"));
-// var hour;
+
 
 function currentHour() {
     hour = moment().format('HH');
     setColor(hour);
 }
-// var hour = moment().format('HH');
 
-console.log("Current Hour = " + currentHour);
+
+// console.log("Current Hour = " + currentHour);
 
 // add past, present, future class depending on time
 function setColor(time) {
     for (var i = 0; i < column.length; i++) {
-        // let _hour = currentHour();
+     
         if (column[i].id == time) {
             $(column[i]).addClass("present");
         }
