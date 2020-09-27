@@ -13,6 +13,7 @@ For this project, the goal was to create a day planner utilizing the momentJS AP
 * [Author](#author)
 * [Images](#images)
 * [License](#license)
+* [Acknowledgments](#Acknowledgments)
 
 ## Installation
 To launch this site, I created a repository on github and utilized github pages to host it.
@@ -64,4 +65,7 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
+
+## Acknowledgments
+* [Save Button Icons from fontawesome.com](https://fontawesome.com/)
 
