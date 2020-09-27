@@ -39,7 +39,7 @@ Jonathan SanPedro - Bachelors of Information Technology Rutgers New Brunswick - 
 * [LinkedIn](https://www.linkedin.com/in/jonathan-s-6ab32283/)
 
 ## Images
-![Schedule](./Assets/scheduler.png)
+![Schedule](./Assets/schedule.png)
 
 ## License
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
