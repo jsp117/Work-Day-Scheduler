@@ -22,9 +22,9 @@ This application was designed to be able to store information a user wants to re
 
 ## Built_With
 * JavaScript
-* MomentJS
+* [MomentJS](https://momentjs.com/)
 * HTML
-* Bootstrap
+* [Bootstrap](https://getbootstrap.com/)
 * CSS
 * [Github](https://github.com/)
 
